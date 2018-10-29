@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Insert Images</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<style type="text/css">
+	body{
+		background: #0f0c29; /* fallback for old browsers */
+        background: -webkit-linear-gradient(to right, #0f0c29, #302b63, #24243e); /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to right, #0f0c29, #302b63, #24243e); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+	}
+	.contain{
+		margin: 8vw 40vw;
+
+	}
+	h1{
+		color: white;
+		padding-top: 10px;
+		text-align: center;
+		text-transform: uppercase;
+	}
+	input{
+
+		width: 90%;
+		height: 60px;
+		margin:  20px 5%;
+	}
+	input[type="text"]{
+		text-align: center;
+		border-radius: 20px;
+	}
+	form button{
+		margin : 5px 5% ; 
+	}
+	#bt{
+		margin: 10px 5%;
+	}
+
+	</style>
+</head>
+<body>
+	<div class="contain">
+		<h1>Insert Link</h1>
+
+		<form action="/insertimage" method="POST">
+			<input type="text" name="imagelink"   placeholder="Insert Link">
+			<input type="text" name="logo"        placeholder="Enter Name">
+			<input type="text" name="description" placeholder="Enter Description">	
+			<button class="btn btn-success">Submit</button>
+		</form>
+			<button id="bt" class="btn btn-success">Go Back</button>
+		<script type="text/javascript">
+		document.getElementById('bt').addEventListener('click' , function(){
+        	window.location.href='http://localhost:4040/';
+		});
+		</script>	
+	</div>	
+</body>
+</html>
